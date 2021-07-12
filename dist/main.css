@@ -1,0 +1,86 @@
+/*!*************************************************************************************************************************************!*\
+!*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
+\*************************************************************************************************************************************/
+
+.main-container {
+  position: relative;
+  height: 90%;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+  border: 6px solid #361c1c;
+  background: rgba(255, 255, 255, 0.4)
+}
+
+.inner-border {
+  border: 2px solid #6e320d;
+  margin: 2px;
+}
+
+body {
+  background-image: url("images/map2.jpg");
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 60px;
+  color: #200e04;
+}
+
+.button {
+  display: inline-blocks;
+  margin-left: auto;
+  position: relative;
+  align-items: stretch;
+  justify-content: space-around;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  transition-duration: 1.0s;
+}
+
+select {
+  background-color: rgb(170, 84, 227);
+  opacity: 70%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 40px;
+  transition-duration: 1.0s;
+}
+
+select:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3), 0 6px 20px 0 rgba(0,0,0,0.19);
+  opacity: 1.0;
+}
+
+button {
+  border-radius: 40px;
+  opacity: 70%;
+}
+
+button:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3), 0 6px 20px 0 rgba(0,0,0,0.19);
+  opacity: 1.0;
+}
+
+#npc {
+  background-color: rgb(255, 192, 228);
+}
+
+#monster {
+  background-color: rgb(253, 173, 12);
+}
+
+#magic_item {
+  background-color: yellow;
+}
+
+#location {
+  background-color: rgb(164, 226, 98);
+}
+
+#surprise {
+  background-color: lightblue;
+}
+
