@@ -3,7 +3,7 @@ import magicItems from '../dist/magic_items.js';
 import ConfettiGenerator from "confetti-js";
 
 document.addEventListener('DOMContentLoaded', () => {
-  const firstNames = ["Wiggle", "Tofu", "Bon Bon", "Bunny", "Crabcake", "Data", "Bad Lil Kitty", "Dad Body", "Hot Girl Summer", "Dumplin'", "Macho Man", "White Claw", "Flapjack", "Daddy", "Kitty Mike", "LeBron", "Queen", "LeBronda", "Demetrius", "Roly Poly", "Shmoo", "Sloppy Joe", "Sticky", "Stinky", "Tribbler", "Cool Ranch", "Tutti Fruiti", "Wicket", "Tomoko", "Yung", "Soup", "Charlie", "Veronika", "Jellybean", "Mara", "Jenny", "Trustin", "Mishka", "Mad Dog", "Mike Le", "Nicha", "MegaHam", "Caanburke", "Zeke", "Hilal", "Enchilada", "Walker", "Charis", "Jaycee", "Kevin", "Kiet", "Luca", "Barbarella", "Oscar", "Samwise", "Shirley", "Yun", "James Charles", "LaToya", "Zamin"]
+  const firstNames = ["Wiggle", "Jewish", "Ayce", "Tofu", "Bon Bon", "Bunny", "Crabcake", "Data", "Bad Lil Kitty", "Dad Body", "Hot Girl Summer", "Dumplin'", "Macho Man", "White Claw", "Flapjack", "Daddy", "Kitty Mike", "LeBron", "Queen", "LeBronda", "Demetrius", "Roly Poly", "Shmoo", "Sloppy Joe", "Sticky", "Stinky", "Tribbler", "Cool Ranch", "Tutti Fruiti", "Wicket", "Tomoko", "Yung", "Soup", "Charlie", "Veronika", "Jellybean", "Mara", "Jenny", "Trustin", "Mishka", "Mad Dog", "Mike Le", "Nicha", "MegaHam", "Caanburke", "Zeke", "Hilal", "Enchilada", "Walker", "Charis", "Jaycee", "Kevin", "Kiet", "Luca", "Barbarella", "Oscar", "Samwise", "Shirley", "Yun", "James Charles", "LaToya", "Zamin"]
   const lastNames = ["Chesterton", "Finkel", "McSprinkle", "Cold One With The Boys", "Bernie Sanders", "OKCupid", "Tinder", "Bumble", "Hinge", "Plenty of Fish", "Match.com", "Men are Trash", "Epstein", "Love Isn't Real", "Flat Earth", "The Lord", "Furry Sanders", "McGee", "The Terminator", "Weed", "The Rock Johnson", "Fireball", "Randy Savage", "Destroyer of Worlds", "Never Forget", "Girlboss", "ADHD", "Flava Flav", "Daddy Maddy", "Lexapro", "Adderall", "Zoloft", "Baja Blasted", "Chris Harrison", "Kevin Federline", "Huff Sharpies", "Cry Evertim", "Based", "Gravy", "Bloodborne", "Southern Comfort", "Madsen", "Pilipenko", "Dell'Acqua", "Le", "Yang", "Chai", "Varli", "Ingebretson", "Magpusao", "Angcla", "Dance Dance Revolution", "Thank You Satan", "Thongpanchang", "Palacios Vazquez","Yoon", "Tang", "Trader Joe's", "Cleveland, Ohio", "Sour Diesel", "Northern Lights", "Girl Scout Cookies", "Paul Wall", "Brook Hogan", "Acab", "Balloons", "Hallelujah Island", "Candy", "Marx Was Right", "My Parents Are Divorced", "Juicy Bugs"]
   const firstTavernNames = ["Adorable", "Aggressive", "Exactly, Exactly", "Anxious", "Bloody", "Blushing", "Crazy", "Dead", "Dizzy", "Interesting", "Easy", "Famous", "Fantastic", "Chafing", "Flying", "Missing",  "Friendly", "Gleaming", "Grieving", "Grumpy", "Happy", "Homely", "Impossible", "Jolly", "Lonely", "Muddy", "Mushy", "Naughty", "Nervous", "Pleasant", "Puzzled", "Scary", "Sparkling", "Splendid", "Stormy", "Tasty", "Tough", "Ugly", "Vivacious", "Weary", "Witty", "Zealous", "Wrong", "Daring", "Fleeing", "Lying", "Listening", ]
   const lastTavernNames = ["walrus", "dingo", "yak", "Freak of Nature", "Weirdo", "Pinata", "Redneck", "Bourgeoisie", "Alcoholic", "Divorcee", "hog", "gopher", "opossum", "jaguar", "squirrel", "leopard", "baboon", "alpaca", "mink", "skunk", "puma", "turtle", "snake", "hartebeest", "rabbit", "seal", "shrew", "ferret", "capybara", "hippopotamus", "kitten", "rat", "badger", "puppy", "koala", "basilisk", "wombat", "kangaroo", "crow", "ox", "gila Monster", "burro", "donkey", "salamander", "lion", "rhinoceros", "pronghorn"]
@@ -11,31 +11,36 @@ document.addEventListener('DOMContentLoaded', () => {
   const getRandomNumber = (max) => Math.floor(Math.random() * max);
 
   const randomNPCPic = new Array();
-  randomNPCPic[0] = "images/NPCs/macho.jpg";
-  randomNPCPic[1] = "images/NPCs/legolashotpic.jpg";
-  randomNPCPic[2] = "images/NPCs/bret.jpg";
-  randomNPCPic[3] = "images/NPCs/paula.jpg";
-  randomNPCPic[4] = "images/NPCs/latoya.png";
-  randomNPCPic[5] = "images/NPCs/lebron.jpg";
-  randomNPCPic[6] = "images/NPCs/corey.jpg";
-  randomNPCPic[7] = "images/NPCs/brendan.jpg";
-  randomNPCPic[8] = "images/NPCs/pedro.jpg";
-  randomNPCPic[9] = "images/NPCs/dane.jpg";
-  randomNPCPic[10] = "images/NPCs/NormMcDonald.jpg";
-  randomNPCPic[11] = "images/NPCs/TimHorton.jpg";
-  randomNPCPic[12] = "images/NPCs/jamie.jpg";
-  randomNPCPic[13] = "images/NPCs/trace.jpg";
+  randomNPCPic[0] = "dist/images/NPCs/macho.jpg";
+  randomNPCPic[1] = "dist/images/NPCs/legolashotpic.jpg";
+  randomNPCPic[2] = "dist/images/NPCs/bret.jpg";
+  randomNPCPic[3] = "dist/images/NPCs/paula.jpg";
+  randomNPCPic[4] = "dist/images/NPCs/latoya.png";
+  randomNPCPic[5] = "dist/images/NPCs/lebron.jpg";
+  randomNPCPic[6] = "dist/images/NPCs/corey.jpg";
+  randomNPCPic[7] = "dist/images/NPCs/brendan.jpg";
+  randomNPCPic[8] = "dist/images/NPCs/pedro.jpg";
+  randomNPCPic[9] = "dist/images/NPCs/dane.jpg";
+  randomNPCPic[10] = "dist/images/NPCs/NormMcDonald.jpg";
+  randomNPCPic[11] = "dist/images/NPCs/TimHorton.jpg";
+  randomNPCPic[12] = "dist/images/NPCs/jamie.jpg";
+  randomNPCPic[13] = "dist/images/NPCs/trace.jpg";
+  randomNPCPic[14] = "dist/images/NPCs/adam.jpg";
+  randomNPCPic[15] = "dist/images/NPCs/davidspade.jpg";
+  randomNPCPic[16] = "dist/images/NPCs/deuce.jpg";
+  randomNPCPic[17] = "dist/images/NPCs/cinderbuscemi.jpg";
+  randomNPCPic[18] = "dist/images/NPCs/tommy-wiseau.jpg";
 
   const randomTavern = new Array();
-  randomTavern[0] = "images/Taverns/Tavern1.jpg";
-  randomTavern[1] = "images/Taverns/Tavern2.webp";
-  randomTavern[2] = "images/Taverns/Tavern3.png";
-  randomTavern[3] = "images/Taverns/Tavern4.jpeg";
-  randomTavern[4] = "images/Taverns/Tavern5.jpg";
-  randomTavern[5] = "images/Taverns/Tavern6.jpg";
-  randomTavern[6] = "images/Taverns/Tavern7.jpg";
-  randomTavern[7] = "images/Taverns/Tavern8.jpg";
-  randomTavern[8] = "images/Taverns/Tavern9.jpg";
+  randomTavern[0] = "dist/images/Taverns/Tavern1.jpg";
+  randomTavern[1] = "dist/images/Taverns/Tavern2.webp";
+  randomTavern[2] = "dist/images/Taverns/Tavern3.png";
+  randomTavern[3] = "dist/images/Taverns/Tavern4.jpeg";
+  randomTavern[4] = "dist/images/Taverns/Tavern5.jpg";
+  randomTavern[5] = "dist/images/Taverns/Tavern6.jpg";
+  randomTavern[6] = "dist/images/Taverns/Tavern7.jpg";
+  randomTavern[7] = "dist/images/Taverns/Tavern8.jpg";
+  randomTavern[8] = "dist/images/Taverns/Tavern9.jpg";
 
 
   const getRandomImage = () => {
@@ -68,10 +73,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const generateMonster = () => {
     let idx = getRandomNumber(monsters.length);
-    fetch(`https://www.dnd5eapi.co${monsters[idx]['url']}`).then(function (response) {
+    let url = `https://www.dnd5eapi.co${monsters[idx]['url']}`
+    fetch(url).then(function (response) {
       // The API call was successful!
       console.log('response!', response.json().type);
       // getMonsterType
+    }).then(function (data) {
+      appendData(data);
     }).catch(function (err) {
       // There was an error
       console.warn('Something went wrong.', err);
@@ -79,11 +87,19 @@ document.addEventListener('DOMContentLoaded', () => {
     return `Name: ${monsters[idx]['name']}`
   }
 
+  function appendData(data) {
+    var mainContainer = document.getElementById('generated-text');
+    for (var i = 0; i < data.length; i++) {
+      var div = document.createElement("div");
+      div.innerHTML = 'Name: ' + data[i].alignment;
+      mainContainer.appendChild(div);
+    }
+  }
+
   const generateItem = () => {
     let idx = getRandomNumber(magicItems.length);
     return `Name: ${magicItems[idx]['name']}
     Learn More: https://www.dnd5eapi.co${magicItems[idx]['url']}`;
-    
   }
 
   const generateNPC = () => {
@@ -100,10 +116,12 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const generateConfetti = () => {
-    var confettiSettings = { target: 'my-canvas', max: 2000, clock: 50, start_from_edge: true, rotate: true, respawn: false };
+    var confettiSettings = { target: 'my-canvas', max: 2000, clock: 50, start_from_edge: true, rotate: true };
     var confetti = new ConfettiGenerator(confettiSettings);
     confetti.render();
   }
+
+  // one off confetti: respawn: false
 
   document.getElementById('npc')
     .addEventListener('click', setRandomName);
@@ -128,13 +146,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // };
 
 
-  fetch('http://www.dnd5eapi.co/api/magic-items/').then(function (response) {
-    // The API call was successful!
-    console.log('response!', response.json());
-  }).catch(function (err) {
-    // There was an error
-    console.warn('Something went wrong.', err);
-  });
+  // fetch('http://www.dnd5eapi.co/api/magic-items/').then(function (response) {
+  //   // The API call was successful!
+  //   console.log('response!', response.json());
+  // }).catch(function (err) {
+  //   // There was an error
+  //   console.warn('Something went wrong.', err);
+  // });
 
   
 
