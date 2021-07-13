@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="main.css" type="text/css"/>
-    <script src="./dist/main.js"></script>
+    <link rel="stylesheet" href="./index.css" type="text/css" />
+    <script src="./main.js"></script>
     <title>Campaign Generator</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
     </style>
 </head>
 
-<body>
+<body id="body">
     <div class="main-container">
         <div class="inner-border">
         <h1>GREETINGS ADVENTURERS!</h1>
@@ -22,7 +23,7 @@
             <label for="environment">Choose an Environment:
                 <select name="Environment" id="environment">
                     <div class="dropdown-content">
-                        <option value="arctic">Arctic</option>
+                        <option id="arctic" value="arctic">Arctic</option>
                         <option value="coastal">Coastal</option>
                         <option value="desert">Desert</option>
                         <option value="forest">Forest</option>
@@ -38,11 +39,11 @@
             <button id="npc">Generate NPC</button>
             <button id="monster">Generate Monster</button>
             <button id="magic_item">Generate Magic Item!</button>
-            <button id="location">Generate Location!</button>
+            <button id="location">Generate Tavern!</button>
             <button id="surprise">Surprise Me!</button>   
             </div>
-            <h2>NPC!</h2>
-            <div id="random-NPC"></div>
+            <div id="generated-text"></div>
+            <span id="result"></span>
         </div>
     </div>
 
