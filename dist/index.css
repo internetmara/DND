@@ -150,3 +150,11 @@ audio {
   justify-content: left;
   right: 100%;
 }
+
+#socials img {
+  display: flex;
+  position: relative;
+  
+  height: 30px;
+  width: 30px;
+}

@@ -123,7 +123,8 @@ document.addEventListener('DOMContentLoaded', () => {
     //   // There was an error
     //   console.warn('Something went wrong.', err);
     // });
-    return `Name: ${monsters[idx]['name']}`
+    return `Name: ${monsters[idx]['name']}
+    Learn More: https://www.dnd5eapi.co${monsters[idx]['url']}`;
   }
 
   // function appendData(data) {
