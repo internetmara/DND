@@ -72,10 +72,10 @@ option {
   transition-timing-function: linear;
   transition-delay: 3s;
 }
+
 select:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3), 0 6px 20px 0 rgba(0,0,0,0.19);
   opacity: 1.0;
-  
 }
 
 button {
@@ -143,4 +143,10 @@ canvas {
   /* background: transparent; */
   position: absolute;
   top: 0px;
+}
+
+audio {
+  display: flex;
+  justify-content: left;
+  right: 100%;
 }
