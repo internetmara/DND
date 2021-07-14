@@ -3,7 +3,7 @@ import magicItems from '../dist/magic_items.js';
 import ConfettiGenerator from "confetti-js";
 
 document.addEventListener('DOMContentLoaded', () => {
-  const firstNames = ["Wiggle", "Jewish", "Ayce", "Tofu", "Bon Bon", "Bunny", "Crabcake", "Data", "Bad Lil Kitty", "Dad Body", "Hot Girl Summer", "Dumplin'", "Macho Man", "White Claw", "Flapjack", "Daddy", "Kitty Mike", "LeBron", "Queen", "LeBronda", "Demetrius", "Roly Poly", "Shmoo", "Sloppy Joe", "Sticky", "Stinky", "Tribbler", "Cool Ranch", "Tutti Fruiti", "Wicket", "Tomoko", "Yung", "Soup", "Charlie", "Veronika", "Jellybean", "Mara", "Jenny", "Trustin", "Mishka", "Mad Dog", "Mike Le", "Nicha", "MegaHam", "Caanburke", "Zeke", "Hilal", "Enchilada", "Walker", "Charis", "Jaycee", "Kevin", "Kiet", "Luca", "Barbarella", "Oscar", "Samwise", "Shirley", "Yun", "James Charles", "LaToya", "Zamin"]
+  const firstNames = ["Wiggle", "Jewish", "Ayce", "Tofu", "Bon Bon", "Bunny", "Crabcake", "Data", "Bad Lil Kitty", "Dad Body", "Hot Girl Summer", "Dumplin'", "Macho Man", "White Claw", "Flapjack", "Daddy", "Kitty Mike", "LeBron", "Queen", "LeBronda", "Demetrius", "Roly Poly", "Shmoo", "Sloppy Joe", "Sticky", "Stinky", "Tribbler", "Cool Ranch", "Tutti Fruitti", "Wicket", "Tomoko", "Yung", "Soup", "Charlie", "Veronika", "Jellybean", "Mara", "Jenny", "Trustin", "Mishka", "Mad Dog", "Mike Le", "Nicha", "MegaHam", "Caanburke", "Zeke", "Hilal", "Enchilada", "Walker", "Charis", "Jaycee", "Kevin", "Kiet", "Luca", "Barbarella", "Oscar", "Samwise", "Shirley", "Yun", "James Charles", "LaToya", "Zamin"]
   const lastNames = ["Chesterton", "Finkel", "McSprinkle", "Cold One With The Boys", "Bernie Sanders", "OKCupid", "Tinder", "Bumble", "Hinge", "Plenty of Fish", "Match.com", "Men are Trash", "Epstein", "Love Isn't Real", "Flat Earth", "The Lord", "Furry Sanders", "McGee", "The Terminator", "Weed", "The Rock Johnson", "Fireball", "Randy Savage", "Destroyer of Worlds", "Never Forget", "Girlboss", "ADHD", "Flava Flav", "Daddy Maddy", "Lexapro", "Adderall", "Zoloft", "Baja Blasted", "Chris Harrison", "Kevin Federline", "Huff Sharpies", "Cry Evertim", "Based", "Gravy", "Bloodborne", "Southern Comfort", "Madsen", "Pilipenko", "Dell'Acqua", "Le", "Yang", "Chai", "Varli", "Ingebretson", "Magpusao", "Angcla", "Dance Dance Revolution", "Thank You Satan", "Thongpanchang", "Palacios Vazquez","Yoon", "Tang", "Trader Joe's", "Cleveland, Ohio", "Sour Diesel", "Northern Lights", "Girl Scout Cookies", "Paul Wall", "Brook Hogan", "Acab", "Balloons", "Hallelujah Island", "Candy", "Marx Was Right", "My Parents Are Divorced", "Juicy Bugs"]
   const firstTavernNames = ["Adorable", "Aggressive", "Exactly, Exactly", "Anxious", "Bloody", "Blushing", "Crazy", "Dead", "Dizzy", "Interesting", "Easy", "Famous", "Fantastic", "Chafing", "Flying", "Missing",  "Friendly", "Gleaming", "Grieving", "Grumpy", "Happy", "Homely", "Impossible", "Jolly", "Lonely", "Muddy", "Mushy", "Naughty", "Nervous", "Pleasant", "Puzzled", "Scary", "Sparkling", "Splendid", "Stormy", "Tasty", "Tough", "Ugly", "Vivacious", "Weary", "Witty", "Zealous", "Wrong", "Daring", "Fleeing", "Lying", "Listening", ]
   const lastTavernNames = ["walrus", "dingo", "yak", "Freak of Nature", "Weirdo", "Pinata", "Redneck", "Bourgeoisie", "Alcoholic", "Divorcee", "hog", "gopher", "opossum", "jaguar", "squirrel", "leopard", "baboon", "alpaca", "mink", "skunk", "puma", "turtle", "snake", "hartebeest", "rabbit", "seal", "shrew", "ferret", "capybara", "hippopotamus", "kitten", "rat", "badger", "puppy", "koala", "basilisk", "wombat", "kangaroo", "crow", "ox", "gila Monster", "burro", "donkey", "salamander", "lion", "rhinoceros", "pronghorn"]
@@ -30,6 +30,13 @@ document.addEventListener('DOMContentLoaded', () => {
   randomNPCPic[16] = "dist/images/NPCs/deuce.jpg";
   randomNPCPic[17] = "dist/images/NPCs/cinderbuscemi.jpg";
   randomNPCPic[18] = "dist/images/NPCs/tommy-wiseau.jpg";
+  randomNPCPic[19] = "dist/images/NPCs/jaycee.jpeg";
+  randomNPCPic[20] = "dist/images/NPCs/oscar.png";
+  randomNPCPic[21] = "dist/images/NPCs/JohnV.jpeg";
+  randomNPCPic[22] = "dist/images/NPCs/ChrisID.JPG";
+  randomNPCPic[23] = "dist/images/NPCs/guyfieri.jpg";
+  randomNPCPic[24] = "dist/images/NPCs/tigerking.jpg";
+  randomNPCPic[25] = "dist/images/NPCs/aycedog.JPG";
 
   const randomTavern = new Array();
   randomTavern[0] = "dist/images/Taverns/Tavern1.jpg";
@@ -73,9 +80,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const generateMonster = () => {
     let idx = getRandomNumber(monsters.length);
-    let url = `https://www.dnd5eapi.co${monsters[idx]['url']}`
+    let url = (`https://www.dnd5eapi.co${monsters[idx]['url']}`)
     fetch(url).then(function (response) {
       // The API call was successful!
+      debugger
       console.log('response!', response.json().type);
       // getMonsterType
     }).then(function (data) {
@@ -91,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
     var mainContainer = document.getElementById('generated-text');
     for (var i = 0; i < data.length; i++) {
       var div = document.createElement("div");
-      div.innerHTML = 'Name: ' + data[i].alignment;
+      div.innerHTML = 'Alignment: ' + data[i].alignment;
       mainContainer.appendChild(div);
     }
   }
