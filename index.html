@@ -18,7 +18,8 @@
                 document.body.style.backgroundImage = "url('"+x+"')"
             }
         </script>
-</head>
+        <link rel="shortcut icon" type="image/jpg" href="dist/images/Jellycopy.png" />
+    </head>
 
 <body id="body">
    <canvas id="my-canvas" height="0" width="0"></canvas>
@@ -38,7 +39,7 @@
                             <option value="dist/images/Backgrounds/hillbg.jpg">Hill</option>
                             <option value="dist/images/Backgrounds/swampbg.jpg">Swamp</option>
                             <option value="dist/images/Backgrounds/underdarkbg.jpg">Underdark</option>
-                            <option value="dist/images/Backgrounds/underwatermap.png">Underwater</option>
+                            <option value="dist/images/Backgrounds/underwaterbg.jpg">Underwater</option>
                             <option value="dist/images/Backgrounds/citybg.jpg">Urban</option>
                             <option value="dist/images/Backgrounds/brookhedge.jpg">Brookhedge</option>
                             <option value="dist/images/Backgrounds/ravebg.jpg">Rave</option>
@@ -55,14 +56,19 @@
             <span id="result"></span></p>
         </div>
     </div>
-    <div id="socials">
-    <a href="www.linkedin.com/in/marafinkel"><img src="dist/images/socials/Linkedin.png" width="15" height="15"></a>
-    <a href="https://github.com/internetmara"><img src="dist/images/socials/GitHub.png" width="15" height="15"></a>
+    <div class="bottom-container">
+        <div class="audio">
+            <audio controls >
+                <source src="dist/Music/magicFlute.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div class="socials">
+            <a href="linkedin.com/in/marafinkel"><img src="dist/images/socials/Linkedin.png" width="15" height="15"></a>
+            <a href="https://github.com/internetmara"><img src="dist/images/socials/GitHub.png" width="15" height="15"></a>
+        </div>
     </div>
-    <!-- <audio controls autoplay>
-        <source src="dist/angrybeavers.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
-    </audio> -->
 </body>
 
 </html>

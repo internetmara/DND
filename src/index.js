@@ -112,34 +112,34 @@ document.addEventListener('DOMContentLoaded', () => {
   const generateMonster = () => {
     let idx = getRandomNumber(monsters.length);
     getMonsterPic(idx)
-    // let url = (`https://www.dnd5eapi.co${monsters[idx]['url']}`)
-    // fetch(url).then(function (response) {
-    //   // The API call was successful!
-    //   console.log('response!', response.json().type);
-    //   // getMonsterType
-    // }).then(function (data) {
-    //   appendData(data);
-    // }).catch(function (err) {
-    //   // There was an error
-    //   console.warn('Something went wrong.', err);
-    // });
-    return `Name: ${monsters[idx]['name']}
-    Learn More: https://www.dnd5eapi.co${monsters[idx]['url']}`;
+    let url = (`https://www.dnd5eapi.co${monsters[idx]['url']}`)
+    console.log(url);
+    fetch(url).then(response => response.json())
+    .then(data => appendData(data));
+    return `Name: ${monsters[idx]['name']}`;
   }
 
-  // function appendData(data) {
-  //   var mainContainer = document.getElementById('generated-text');
-  //   for (var i = 0; i < data.length; i++) {
-  //     var div = document.createElement("div");
-  //     div.innerHTML = 'Alignment: ' + data[i].alignment;
-  //     mainContainer.appendChild(div);
-  //   }
-  // }
+  function appendData(data) {
+    var mainContainer = document.getElementById('generated-text');
+      var div = document.createElement("div");
+    div.innerHTML = 'Alignment: ' + data.alignment + '<br>' + 'Size: ' + data.size + '<br>' + 'HP: ' + data.hit_points + ' / AC: ' + data.armor_class + '<br>' + 'Type: ' + data.type;
+      mainContainer.appendChild(div);
+  }
 
   const generateItem = () => {
     let idx = getRandomNumber(magicItems.length);
-    return `Name: ${magicItems[idx]['name']}
-    Learn More: https://www.dnd5eapi.co${magicItems[idx]['url']}`;
+    let url = (`https://www.dnd5eapi.co${magicItems[idx]['url']}`)
+    console.log(url);
+    fetch(url).then(response => response.json())
+    .then(data => appendItemData(data));
+    return `Name: ${magicItems[idx]['name']}`;
+  }
+
+  function appendItemData(data) {
+    var mainContainer = document.getElementById('generated-text');
+    var div = document.createElement("div");
+    div.innerHTML = 'Description: ' + data.desc[0] + '<br>' + 'Details: ' + data.desc[1];
+    mainContainer.appendChild(div);
   }
 
 

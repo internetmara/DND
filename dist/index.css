@@ -149,12 +149,16 @@ audio {
   display: flex;
   justify-content: left;
   right: 100%;
+  opacity: 40%;
 }
 
-#socials img {
-  display: flex;
-  position: relative;
-  
+.socials img {
   height: 30px;
   width: 30px;
+}
+
+.bottom-container {
+  display: flex;
+  align-self: flex-end;
+  justify-content: flex-end;
 }
