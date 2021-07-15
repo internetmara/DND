@@ -64,7 +64,7 @@ select {
   transition-duration: 1s;
   transition-timing-function: linear;
   transition-delay: 2s;
-  font-size: 20px;
+  font-size: 15px;
   font-family: 'Cinzel', serif;
   border: 3px solid rgb(57, 51, 41);
   text-align: center;
@@ -76,7 +76,7 @@ option {
   transition-duration: 3s;
   transition-timing-function: linear;
   transition-delay: 3s;
-  font-size: 20px;
+  font-size: 15px;
   font-family: 'Cinzel', serif;
   text-align: center;
 }
@@ -86,7 +86,7 @@ option {
   transition-duration: 3s;
   transition-timing-function: linear;
   transition-delay: 3s;
-  font-size: 20px;
+  font-size: 15px;
   font-family: 'Cinzel', serif;
   text-align: center;
 }
@@ -100,7 +100,7 @@ button {
   border-radius: 40px;
   opacity: 70%;
   border: 3px solid rgb(57, 51, 41);
-  font-size: 20px;
+  font-size: 15px;
   font-family: 'Cinzel', serif;
 }
 
@@ -131,8 +131,8 @@ button:hover {
 
 #generated-text {
   background: rgba(81, 81, 81, 0.4);
-  text-align: center;
-  font-size: 20px;
+  text-align-last: center;
+  font-size: 15px;
   transition-property: width;
   transition-duration: 1s;
   transition-timing-function: linear;
