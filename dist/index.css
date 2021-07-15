@@ -5,7 +5,7 @@
   margin-left: 5%;
   margin-top: 5%;
   border: 6px solid #361c1c;
-  background: rgba(255, 255, 255, 0.4)
+  background: rgba(222, 220, 220, 0.5)
 }
 
 .inner-border {
@@ -22,6 +22,13 @@ h1 {
   text-align: center;
   font-family: 'Cinzel', serif;
   font-size: 60px;
+  color: #200e04;
+}
+
+h4 {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
   color: #200e04;
 }
 
@@ -43,7 +50,7 @@ span {
   justify-content: space-around;
   padding: 10px;
   text-align: center;
-  font-size: 16px;
+  font-size: 20px;
   transition-duration: 1.0s;
 }
 
@@ -57,6 +64,11 @@ select {
   transition-duration: 1s;
   transition-timing-function: linear;
   transition-delay: 2s;
+  font-size: 20px;
+  font-family: 'Cinzel', serif;
+  border: 3px solid rgb(57, 51, 41);
+  text-align: center;
+
 }
 
 option {
@@ -64,6 +76,9 @@ option {
   transition-duration: 3s;
   transition-timing-function: linear;
   transition-delay: 3s;
+  font-size: 20px;
+  font-family: 'Cinzel', serif;
+  text-align: center;
 }
 
 .dropdown-content {
@@ -71,6 +86,9 @@ option {
   transition-duration: 3s;
   transition-timing-function: linear;
   transition-delay: 3s;
+  font-size: 20px;
+  font-family: 'Cinzel', serif;
+  text-align: center;
 }
 
 select:hover {
@@ -81,6 +99,9 @@ select:hover {
 button {
   border-radius: 40px;
   opacity: 70%;
+  border: 3px solid rgb(57, 51, 41);
+  font-size: 20px;
+  font-family: 'Cinzel', serif;
 }
 
 button:hover {
@@ -160,5 +181,7 @@ audio {
 .bottom-container {
   display: flex;
   align-self: flex-end;
-  justify-content: flex-end;
+  justify-content: space-between;
+  margin-right: 60px;
+  margin-left: 65px;
 }

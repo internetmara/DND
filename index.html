@@ -10,6 +10,7 @@
         <script src="dist/main.js"></script>
         <script src="node_modules/confetti-js/dist/index.min.js"></script>
         <title>Campaign Generator</title>
+        <link rel="shortcut icon" type="image/png" href="dist/images/Jellycopy.png" />
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
         </style>
@@ -18,7 +19,6 @@
                 document.body.style.backgroundImage = "url('"+x+"')"
             }
         </script>
-        <link rel="shortcut icon" type="image/jpg" href="dist/images/Jellycopy.png" />
     </head>
 
 <body id="body">
@@ -26,8 +26,9 @@
     <div class="main-container">
         <div class="inner-border">
             <h1>GREETINGS ADVENTURERS!</h1>
+            <h4>The Dungeon Master creates a world for the other players to explore and runs adventures that drive the story. Planning an entire campaign might seem like a daunting task, but you don't have to plot out every detail right from the start. You're free to add as much or as little detail as you wish. Go forth with courage, master of worlds!</h4>
             <div class="button">
-                <label for="environment">Choose an Environment:
+                <label for="environment">Environment:
                     <select onchange="handleOnChangeEvent(this.value)" name="Environment" id="environment">
                         <div class="dropdown-content">
                             <option value="dist/images/Backgrounds/map2.jpg">World</option>
@@ -48,9 +49,9 @@
                 </label>
                 <button id="npc">Generate NPC</button>
                 <button id="monster">Generate Monster</button>
-                <button id="magic_item">Generate Magic Item!</button>
-                <button id="location">Generate Tavern!</button>
-                <button id="surprise">💖🌈🦄</button>   
+                <button id="magic_item">Generate Magic Item</button>
+                <button id="location">Generate Tavern</button>
+                <button id="surprise">💖🌈🦄</button>
             </div>
             <p><div id="generated-text"></div>
             <span id="result"></span></p>
@@ -58,13 +59,14 @@
     </div>
     <div class="bottom-container">
         <div class="audio">
-            <audio controls autoplay>
+            <audio controls>
                 <source src="dist/Music/lotr.mp3" type="audio/mp3">
                 Your browser does not support the audio element.
             </audio>
         </div>
 
         <div class="socials">
+            <a href="about.html"><img src="dist/images/Jellycopy.png" width="15" height="15"></a>
             <a href="https://www.linkedin.com/in/marafinkel/"><img src="dist/images/socials/Linkedin.png" width="15" height="15"></a>
             <a href="https://github.com/internetmara"><img src="dist/images/socials/GitHub.png" width="15" height="15"></a>
         </div>

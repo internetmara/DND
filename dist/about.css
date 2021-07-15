@@ -1,0 +1,82 @@
+body {
+  background-image: url('images/Backgrounds/fantasybg.jpg');
+  background-size: cover;
+}
+
+.main-container {
+  margin-top: 200px;
+  position: relative;
+  border: 6px solid #361c1c;
+  background: rgba(255, 255, 255, 0.5)
+}
+
+.inner-border {
+  border: 2px solid #6e320d;
+  margin: 2px;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 60px;
+  color: #200e04;
+}
+
+h3 {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  border-radius: 40px;
+  padding: 10px;
+  border: 3px solid rgb(57, 51, 41);
+  background-color: #897b72;
+  color: white;
+}
+
+input:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.socials img {
+  height: 30px;
+  width: 30px;
+}
+
+.bottom-container {
+  display: flex;
+  align-self: flex-end;
+  justify-content: space-between;
+  margin-right: 60px;
+  margin-left: 40px;
+}
+
+audio {
+  display: flex;
+  justify-content: left;
+  right: 100%;
+  opacity: 10%;
+}
+
+img {
+    float: left;
+    width:  500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 40px;
+    border: 3px solid #000000;
+    margin: 4px;
+}
