@@ -85,6 +85,10 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('result').innerHTML = '<img src="' + randomTavern[getRandomNumber(randomTavern.length)] + '" />';
   }
 
+  const getDragonPic = () => {
+    document.getElementById('result').innerHTML = '<img src="dist/images/dragon.jpg"/>';
+  }
+
   const getMonsterPic = (idx) => {
     document.getElementById('result').innerHTML = '<img src="' + monsters[idx]['img'] + '" />';
   }
@@ -127,6 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const generateItem = () => {
+    getDragonPic();
     let idx = getRandomNumber(magicItems.length);
     let url = (`https://www.dnd5eapi.co${magicItems[idx]['url']}`)
     console.log(url);
@@ -141,7 +146,6 @@ document.addEventListener('DOMContentLoaded', () => {
     div.innerHTML = 'Description: ' + data.desc[0] + '<br>' + 'Details: ' + data.desc[1];
     mainContainer.appendChild(div);
   }
-
 
   const generateTavern = () => {
     getRandomTavernPic();
