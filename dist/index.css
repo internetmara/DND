@@ -130,7 +130,9 @@ button:hover {
 }
 
 #generated-text {
-  background: rgba(81, 81, 81, 0.4);
+  font-family: 'Cinzel', serif;
+  font-size: 15px;
+  background: rgba(214, 214, 214, 0.6);
   text-align-last: center;
   font-size: 15px;
   transition-property: width;

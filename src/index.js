@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
   randomNPCPic[23] = "dist/images/NPCs/guyfieri.jpg";
   randomNPCPic[24] = "dist/images/NPCs/tigerking.jpg";
   randomNPCPic[25] = "dist/images/NPCs/aycedog.JPG";
+  randomNPCPic[26] = "dist/images/NPCs/john.jpeg";
 
   const randomTavern = new Array();
   randomTavern[0] = "dist/images/Taverns/Tavern1.jpg";
@@ -177,37 +178,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.getElementById('surprise')
     .addEventListener('click', confetti);
-
-  // document.getElementById('arctic')
-  //   .addEventListener('click', getArcticBackground);
-
-  // const getArcticBackground = () => {
-  //   document.getElementById('body').innerHTML = '<img src="'images/Backgrounds/Arcticbg.png'" />';
-  // };
-
-
-  // fetch('http://www.dnd5eapi.co/api/magic-items/').then(function (response) {
-  //   // The API call was successful!
-  //   console.log('response!', response.json());
-  // }).catch(function (err) {
-  //   // There was an error
-  //   console.warn('Something went wrong.', err);
-  // });
-
-  
-
-  
-
-//   // monster fetcher
-//   document.getElementById('monster')
-//     .addEventListener('click', setRandomMonster);
-
-  // const setRandomMonster = () => {
-  //   return `getRandomNumber()`;
-  // }
-
-  
-
-
 })
 
