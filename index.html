@@ -7,6 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <link rel="stylesheet" href="dist/main.css" type="text/css"/>
         <link rel="stylesheet" href="dist/index.css" type="text/css" />
+        <link rel="stylesheet" href="dist/reset.css" type="text/css">
         <script src="dist/main.js"></script>
         <script src="node_modules/confetti-js/dist/index.min.js"></script>
         <title>Campaign Generator</title>
@@ -25,10 +26,10 @@
    <canvas id="my-canvas" height="0" width="0"></canvas>
     <div class="main-container">
         <div class="inner-border">
-            <h1>GREETINGS ADVENTURERS!</h1>
-            <h4>The Dungeon Master creates a world for the other players to explore and runs adventures that drive the story. Planning an entire campaign might seem like a daunting task, but you don't have to plot out every detail right from the start. You're free to add as much or as little detail as you wish. Go forth with courage, master of worlds!</h4>
+            <h1 class="index-header">GREETINGS ADVENTURERS!</h1>
+            <h4 class="index-info">The Dungeon Master creates a world for the other players to explore and runs adventures that drive the story. Planning an entire campaign might seem like a daunting task, but you don't have to plot out every detail right from the start. You're free to add as much or as little detail as you wish. Go forth with courage, master of worlds!</h4>
             <div class="button">
-                <label for="environment">Choose an Environment:
+                <label for="environment" class="environment">Choose an Environment:
                     <select onchange="handleOnChangeEvent(this.value)" name="Environment" id="environment">
                         <div class="dropdown-content">
                             <option value="dist/images/Backgrounds/map2.jpg">World</option>
