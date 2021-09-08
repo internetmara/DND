@@ -20,35 +20,40 @@ body {
   font-family: 'Cinzel', serif;
   font-size: 60px;
   color: #200e04;
+  font-weight: bold;
+  margin: 40px;
 }
 
-h2 {
+.about-description2 {
   font-family: 'Cinzel', serif;
   font-size: 20px;
   color: #200e04;
   text-align: center;
 }
 
-h3 {
+.about-description {
   font-family: 'Cinzel', serif;
   font-size: 25px;
   text-align: center;
+  font-weight: bold;
+  margin: 25px;
 }
 
-h4 {
+.about-flavor {
   font-family: 'Cinzel', serif;
   text-align: center;
   font-size: 20px;
   line-height: 40px;
+  margin: 25px;
 }
 
-form {
+.form {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-input {
+.input {
   font-size: 20px;
   text-align: center;
   font-family: 'Cinzel', serif;
@@ -57,9 +62,10 @@ input {
   border: 3px solid rgb(57, 51, 41);
   background-color: #897b72;
   color: white;
+  margin: 10px;
 }
 
-input:hover {
+.input:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
