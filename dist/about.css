@@ -89,12 +89,10 @@ audio {
   opacity: 10%;
 }
 
-img {
-    float: left;
-    width:  500px;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 40px;
-    border: 3px solid #000000;
-    margin: 4px;
+.socials img {
+  height: 30px;
+  width: 30px;
+  border: 3px solid #000000;
+  margin: 4px;
+  border-radius: 40px;
 }
