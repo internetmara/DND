@@ -90,6 +90,7 @@ body {
 
 audio {
   opacity: 50%;
+  border: 3px double #000000;
 }
 
 .socials img {
@@ -107,5 +108,5 @@ audio {
   border-radius: 30px;
   padding: 5px;
   border: 3px double #000000;
-  margin: 4px;
+  /* margin: 4px; */
 }
