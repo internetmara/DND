@@ -47,10 +47,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition-property: width;
-  transition-duration: 1s;
-  transition-timing-function: linear;
-  transition-delay: 2s;
+  
 } */
 
 .button {
@@ -143,7 +140,7 @@ button:hover {
 #generated-text {
   font-family: 'Cinzel', serif;
   font-size: 15px;
-  background: rgba(214, 214, 214, 0.4);
+  background: rgba(214, 214, 214, 0.5);
   text-align-last: center;
   font-size: 15px;
   transition-property: width;
@@ -153,24 +150,14 @@ button:hover {
   line-height: 1.5;
   vertical-align: baseline;
   align-items: center;
-  /* justify-content: center; */
-  /* margin: auto; */
   border-radius: 20px;
   padding: 20px;
 }
-
-/* p {
+  
+  .result {
   animation-name: fadeInOut, moveLeft300px, bounce;
-  animation-duration: 3s;
+  animation-duration: 5s;
   animation-iteration-count: 1;
-  display: inline-block;
-  justify-content: space-between;
-  align-items: stretch;
-  position: relative;
-   */
-/* } */
-
-.result {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -181,14 +168,24 @@ button:hover {
   margin: auto;
 }
 
+#result {
+  padding: 10px;
+  transition-property: width;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition-delay: 2s;
+}
+
 img {
     /* float: left; */
-    width:  300px;
-    height: 300px;
+    width:  270px;
+    height: 270px;
     /* object-fit: cover; */
-    border-radius: 40px;
+    border-radius: 10px;
     border: 3px solid #000000;
     margin: 4px;
+    padding: 50px;
+    margin: 20px;
 }
 
 canvas {
