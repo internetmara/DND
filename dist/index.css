@@ -140,17 +140,24 @@ button:hover {
   background-color: rgb(158, 212, 231);
 }
 
-/* #generated-text {
+#generated-text {
   font-family: 'Cinzel', serif;
   font-size: 15px;
-  background: rgba(214, 214, 214, 0.6);
+  background: rgba(214, 214, 214, 0.4);
   text-align-last: center;
   font-size: 15px;
   transition-property: width;
   transition-duration: 1s;
   transition-timing-function: linear;
   transition-delay: 2s;
-} */
+  line-height: 1.5;
+  vertical-align: baseline;
+  align-items: center;
+  /* justify-content: center; */
+  /* margin: auto; */
+  border-radius: 20px;
+  padding: 20px;
+}
 
 /* p {
   animation-name: fadeInOut, moveLeft300px, bounce;
@@ -166,7 +173,12 @@ button:hover {
 .result {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 70vw;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  margin: auto;
 }
 
 img {
