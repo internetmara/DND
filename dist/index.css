@@ -156,7 +156,7 @@ button:hover {
   
   .result {
   animation-name: fadeInOut, moveLeft300px, bounce;
-  animation-duration: 5s;
+  animation-duration: 2s;
   animation-iteration-count: 1;
   display: flex;
   flex-direction: row;
@@ -177,10 +177,8 @@ button:hover {
 }
 
 img {
-    /* float: left; */
     width:  270px;
     height: 270px;
-    /* object-fit: cover; */
     border-radius: 10px;
     border: 3px solid #000000;
     margin: 4px;
@@ -189,7 +187,6 @@ img {
 }
 
 canvas {
-  /* background: transparent; */
   position: absolute;
   top: 0px;
 }
