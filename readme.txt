@@ -1,4 +1,4 @@
-<h1>Dungeons & Dragons NPC Campaign Generator</h1>
+#Dungeons & Dragons NPC Campaign Generator
 
 confetti: https://www.npmjs.com/package/confetti-js
 arctic map: https://external-preview.redd.it/KgwsiCKf1mkDFneXMf4qItNTyAAW0b4LeDxfkTjyCag.jpg?width=960&crop=smart&auto=webp&s=f2eeaf7690ee7ded97042ecfc3494171b6f9937e
